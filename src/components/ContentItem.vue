@@ -7,7 +7,6 @@
     <h3>{{ item.title }}</h3>
     <p>{{ item.blurb }}</p>
     <div class="item-footer">
-      <span class="access-chip">{{ item.accessMode }}</span>
       <RouterLink class="card-link" :to="item.target">{{ item.cta }}</RouterLink>
     </div>
   </article>

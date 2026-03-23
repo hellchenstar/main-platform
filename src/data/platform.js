@@ -115,12 +115,14 @@ export const sections = [
       {
         key: 'ai-briefing',
         title: 'AI 行业快讯',
-        meta: '科技资讯 / 多标签 / 事件专题',
-        blurb: '可以作为热点模块下的独立频道继续扩展。',
-        status: '策划中',
-        accessMode: '平台页',
-        target: '/section/news',
-        cta: '查看快讯'
+        meta: '科技资讯 / 子应用 / 已接入',
+        blurb: '已拆为独立 AI 资讯子应用，当前提供精选快讯、主题标签和信息流布局。',
+        status: '已接入',
+        accessMode: '同窗口子应用',
+        target: '/apps/ai-briefing',
+        childAppPath: '/news/ai-briefing/',
+        childAppDevUrl: 'http://127.0.0.1:4174/news/ai-briefing/',
+        cta: '进入快讯'
       }
     ]
   },

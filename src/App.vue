@@ -2,14 +2,14 @@
   <div class="app-shell">
     <header class="topbar">
       <RouterLink class="brand" to="/">
-        <span class="brand-mark">CP</span>
+        <span class="brand-mark">MP</span>
         <span>
-          <strong>Content Playground</strong>
-          <small>游戏 / AI 视频 / 最新热点 / 小说</small>
+          <strong>Main Platform</strong>
+          <small>内容入口平台</small>
         </span>
       </RouterLink>
       <nav class="topnav">
-        <RouterLink to="/">平台首页</RouterLink>
+        <RouterLink to="/">首页</RouterLink>
         <RouterLink
           v-for="section in sections"
           :key="section.slug"

@@ -1,12 +1,8 @@
 <template>
   <article class="section-card" :style="{ '--accent': section.accent }">
     <p class="eyebrow">{{ section.eyebrow }}</p>
-    <h3>{{ section.name }}</h3>
+    <h2>{{ section.name }}</h2>
     <p class="card-text">{{ section.description }}</p>
-    <p class="card-tone">{{ section.tone }}</p>
-    <ul class="chip-list">
-      <li v-for="highlight in section.highlights" :key="highlight">{{ highlight }}</li>
-    </ul>
     <RouterLink class="card-link" :to="`/section/${section.slug}`">进入模块</RouterLink>
   </article>
 </template>
