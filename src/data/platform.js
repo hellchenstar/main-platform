@@ -96,11 +96,13 @@ export const sections = [
         key: 'news-dashboard',
         title: '实时热榜面板',
         meta: '热点看板 / 多源聚合 / 高频更新',
-        blurb: '预留高频热榜与多源聚合内容入口。',
-        status: '规划中',
-        accessMode: '子路径',
-        target: '/news/dashboard/',
-        cta: '查看热榜'
+        blurb: '独立热榜子应用已建好骨架，当前等待正式发布。',
+        status: '开发中',
+        accessMode: '同窗口子应用',
+        target: '/apps/news-dashboard',
+        childAppPath: 'https://hellchenstar.github.io/news-dashboard-web/',
+        childAppDevUrl: 'http://127.0.0.1:4175/news/dashboard/',
+        cta: '进入热榜'
       },
       {
         key: 'frontend-weekly',

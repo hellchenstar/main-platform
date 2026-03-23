@@ -51,7 +51,7 @@ const resolvedUrl = computed(() => {
     : (app.value.childAppPath || app.value.target)
   const url = new URL(baseUrl, window.location.origin)
   const backUrl = new URL(import.meta.env.BASE_URL, window.location.origin)
-  backUrl.hash = '#/section/games'
+  backUrl.hash = `#/section/${app.value.sectionSlug}`
 
   url.searchParams.set('from', 'main-platform')
   url.searchParams.set('appKey', String(route.params.appKey || ''))

@@ -261,9 +261,26 @@ button {
   font-weight: 600;
 }
 
+.card-link-muted {
+  color: var(--muted);
+  border-style: dashed;
+  background: rgba(255, 255, 255, 0.56);
+  cursor: default;
+}
+
 .status-badge {
   padding: 8px 12px;
   font-size: 0.82rem;
+}
+
+.status-soon {
+  color: #8a5a00;
+  background: #fff3d7;
+  border-color: #ffd78a;
+}
+
+.content-item.is-soon {
+  opacity: 0.96;
 }
 
 .empty-state {
