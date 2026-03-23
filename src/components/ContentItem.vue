@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
 const props = defineProps({
@@ -24,6 +24,41 @@ const props = defineProps({
   }
 })
 
-const isLive = computed(() => props.item.status === '已接入')
-const statusText = computed(() => (isLive.value ? props.item.status : '即将上线'))
+const isPublished = ref(props.item.status === '已接入')
+const isDevHost = ['localhost', '127.0.0.1'].includes(window.location.hostname)
+const publishedUrl = computed(() => {
+  if (!props.item.childAppPath || !/^https?:\/\//.test(props.item.childAppPath)) {
+    return ''
+  }
+  return props.item.childAppPath
+})
+
+const isLive = computed(() => {
+  if (props.item.status === '已接入') {
+    return true
+  }
+  if (isDevHost && props.item.childAppDevUrl) {
+    return true
+  }
+  return isPublished.value
+})
+
+const statusText = computed(() => (isLive.value ? '已上线' : '即将上线'))
+
+onMounted(async () => {
+  if (isLive.value || !publishedUrl.value) {
+    return
+  }
+
+  try {
+    await fetch(publishedUrl.value, {
+      method: 'GET',
+      mode: 'no-cors',
+      cache: 'no-store'
+    })
+    isPublished.value = true
+  } catch {
+    isPublished.value = false
+  }
+})
 </script>
