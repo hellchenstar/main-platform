@@ -3,6 +3,9 @@
     <p class="eyebrow">{{ section.eyebrow }}</p>
     <h2>{{ section.name }}</h2>
     <p class="card-text">{{ section.description }}</p>
+    <ul class="section-points">
+      <li v-for="point in section.highlights" :key="point">{{ point }}</li>
+    </ul>
     <RouterLink class="card-link" :to="`/section/${section.slug}`">进入模块</RouterLink>
   </article>
 </template>
