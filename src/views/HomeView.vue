@@ -2,9 +2,9 @@
   <section class="hero hero-home">
     <div>
       <p class="eyebrow">Main Platform</p>
-      <h1>统一入口，按模块进入内容与子应用。</h1>
+      <h1>精选内容入口，统一进入各类子应用与专题页面。</h1>
       <p class="hero-text">
-        这里只保留清晰的模块入口。点进模块，再进入对应内容页或子应用。
+        覆盖游戏、AI 视频、热点资讯与阅读内容，按模块快速进入已上线内容和后续扩展入口。
       </p>
     </div>
   </section>

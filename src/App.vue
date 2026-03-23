@@ -5,7 +5,7 @@
         <span class="brand-mark">MP</span>
         <span>
           <strong>Main Platform</strong>
-          <small>内容入口平台</small>
+          <small>精选内容与子应用入口</small>
         </span>
       </RouterLink>
       <nav class="topnav">
