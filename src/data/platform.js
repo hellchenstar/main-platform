@@ -1,9 +1,9 @@
 export const sections = [
   {
     slug: 'news',
-    name: '热门资讯',
+    name: '资讯中心',
     eyebrow: 'Signal Feed',
-    description: '聚合 AI 行业快讯与实时热榜两条正式内容线，首页只保留真正可访问的资讯入口。',
+    description: '聚合 AI 行业快讯与实时热榜两条正式内容线，首页只保留正式可访问的资讯入口。',
     accent: '#3a6cf4',
     tone: '围绕快讯、热榜和专题追踪持续更新。',
     highlights: ['AI 行业快讯', '实时热榜', '专题追踪'],

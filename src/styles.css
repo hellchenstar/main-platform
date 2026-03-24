@@ -151,6 +151,10 @@ button {
   margin-bottom: 22px;
 }
 
+.hero-home-simple {
+  grid-template-columns: 1fr;
+}
+
 .hero-copy {
   display: grid;
   align-content: start;
@@ -160,8 +164,8 @@ button {
 .hero-home h1,
 .detail-hero h1 {
   margin: 0;
-  font-size: clamp(2.6rem, 5vw, 4.4rem);
-  line-height: 1.02;
+  font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+  line-height: 1.15;
 }
 
 .hero-actions {

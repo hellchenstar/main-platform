@@ -1,21 +1,15 @@
 <template>
-  <section class="hero hero-home">
+  <section class="hero hero-home hero-home-simple">
     <div class="hero-copy">
       <p class="eyebrow">Signal Hub</p>
-      <h1>把值得看的内容，压缩成两个真正可用的入口。</h1>
+      <h1>资讯入口</h1>
       <p class="hero-text">
-        现在首页只保留正式发布方向：AI 行业快讯、实时热榜，以及一个可扩展的快捷入口位。
+        首页仅保留正式上线的信息入口，聚合 AI 行业快讯与后续热点看板能力。
       </p>
       <div class="hero-actions">
-        <RouterLink class="card-link" to="/section/news">进入热门资讯</RouterLink>
+        <RouterLink class="card-link" to="/section/news">进入资讯页</RouterLink>
         <a class="card-link card-link-secondary" href="https://hellchenstar.github.io/ai-briefing-web/">打开 AI 快讯</a>
       </div>
-    </div>
-    <div class="hero-panel quick-panel">
-      <p class="eyebrow">Quick Entry</p>
-      <h2>Bananer 快捷入口</h2>
-      <p class="panel-text">预留给常用外部站、内部看板或后续高频工具。现在先作为快捷入口位使用。</p>
-      <a class="card-link" href="https://bananer.example.com">打开入口</a>
     </div>
   </section>
 
